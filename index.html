@@ -25,9 +25,10 @@
     --primary-color: #2E2A2B;
     --accent-color: #E4A6A0;
     --background-color: #FBF6F4;
-    --text-primary: #f5f0e8;
-    --text-secondary: rgba(245, 240, 232, 0.65);
-    --text-muted: rgba(245, 240, 232, 0.45);
+    --text-primary: #FBF6F4;
+    --text-secondary: #FBF6F4;
+    --text-muted: #FBF6F4;
+    --text-on-light: #2E2A2B;
     --font-heading: 'Playfair+Display', serif;
     --font-body: 'Nunito+Sans', sans-serif;
   }
@@ -37,12 +38,12 @@
     margin: 0;
     background: var(--background-color);
     font-family: var(--font-body);
-    color: var(--text-primary);
+    color: var(--text-on-light);
     overflow-x: clip;
   }
   a { color: var(--primary-color); text-decoration: none; }
   a:hover { color: var(--accent-color); }
-  ::selection { background: rgba(201, 169, 110, 0.35); color: #f5f0e8; }
+  ::selection { background: rgba(201, 169, 110, 0.35); color: #2E2A2B; }
   input::placeholder, textarea::placeholder { color: rgba(245, 240, 232, 0.35); }
 
   @keyframes floaty {
@@ -66,12 +67,12 @@
     <div style="max-width: 1180px; margin: 0 auto; padding: 0 28px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
       <a href="#top" style="font-family: var(--font-heading); font-size: 24px; font-weight: 600; letter-spacing: 0.04em; color: var(--text-primary);">Zia Salon Premier - SM City BF Parañaque</a>
       <div style="display: flex; align-items: center; gap: 34px; font-size: 14px; font-weight: 500;">
-        <a href="#services" style="color: rgba(245,240,232,0.75);">Services</a>
-        <a href="#pricing" style="color: rgba(245,240,232,0.75);">Pricing</a>
-        <a href="#about" style="color: rgba(245,240,232,0.75);">About</a>
-        <a href="#team" style="color: rgba(245,240,232,0.75);">Team</a>
-        <a href="#gallery" style="color: rgba(245,240,232,0.75);">Gallery</a>
-        <a href="#testimonials" style="color: rgba(245,240,232,0.75);">Reviews</a>
+        <a href="#services" style="color: var(--text-secondary);">Services</a>
+        <a href="#pricing" style="color: var(--text-secondary);">Pricing</a>
+        <a href="#about" style="color: var(--text-secondary);">About</a>
+        <a href="#team" style="color: var(--text-secondary);">Team</a>
+        <a href="#gallery" style="color: var(--text-secondary);">Gallery</a>
+        <a href="#testimonials" style="color: var(--text-secondary);">Reviews</a>
         <a href="https://wa.me/639649811235" style="background: var(--primary-color); color: var(--background-color); padding: 11px 24px; border-radius: 999px; font-weight: 600; font-size: 13.5px; letter-spacing: 0.02em; transition: all 0.25s;">Contact Us</a>
       </div>
     </div>
